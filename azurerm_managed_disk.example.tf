@@ -7,7 +7,7 @@ resource "azurerm_managed_disk" "example" {
   storage_account_type = var.storage_account_type
   create_option        = "Empty"
   disk_size_gb         = var.disk_size_gb
-  encryption_settings  {
+  encryption_settings {
     enabled = true
   }
   tags = var.common_tags
@@ -15,6 +15,6 @@ resource "azurerm_managed_disk" "example" {
 
 
 variable "disk_size_gb" {
-  type=number
-  default=10
+  type    = number
+  default = 10
 }
