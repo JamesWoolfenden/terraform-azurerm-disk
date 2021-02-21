@@ -6,11 +6,11 @@ on:
     - cron: '00 7 * * SUN'
   push:
     branches:
-      - master
+      - main
 env:
   terraform: 0.14.5
   tf_target_dir: example/examplea
-  branch: master
+  branch: main
 jobs:
   terraform:
     runs-on: ubuntu-latest
