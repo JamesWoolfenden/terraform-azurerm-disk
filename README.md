@@ -31,27 +31,42 @@ module "disk" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
 
 ## Providers
 
-| Name    | Version |
-| ------- | ------- |
-| azurerm | n/a     |
+| Name | Version |
+|------|---------|
+| azurerm | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_managed_disk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/managed_disk) |
 
 ## Inputs
 
-| Name              | Description                                        | Type     | Default                                              | Required |
-| ----------------- | -------------------------------------------------- | -------- | ---------------------------------------------------- | :------: |
-| account_name      | n/a                                                | `string` | n/a                                                  |   yes    |
-| common_tags       | This is to help you add tags to your cloud objects | `map`    | n/a                                                  |   yes    |
-| failover_location | n/a                                                | `string` | n/a                                                  |   yes    |
-| resource_group    | n/a                                                | `map`    | <pre>{<br> "location": "",<br> "name": ""<br>}</pre> |    no    |
-| table_name        | (optional) describe your variable                  | `string` | `"tfex-cosmos-table"`                                |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| common\_tags | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
+| disk\_name | n/a | `string` | n/a | yes |
+| disk\_size\_gb | n/a | `number` | `10` | no |
+| location | n/a | `string` | `"West US 2"` | no |
+| resource\_group\_name | n/a | `string` | n/a | yes |
+| storage\_account\_type | n/a | `string` | `"Standard_LRS"` | no |
 
 ## Outputs
 
-No output.
-
+| Name | Description |
+|------|-------------|
+| disk | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
