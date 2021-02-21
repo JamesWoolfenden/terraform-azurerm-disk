@@ -12,9 +12,3 @@ resource "azurerm_managed_disk" "example" {
   }
   tags = var.common_tags
 }
-
-
-variable "disk_size_gb" {
-  type    = number
-  default = 10
-}

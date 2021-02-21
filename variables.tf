@@ -16,10 +16,13 @@ variable "storage_account_type" {
 
 variable "resource_group_name" {
   type = string
-
 }
 
 variable "disk_name" {
   type = string
+}
 
+variable "disk_size_gb" {
+  type    = number
+  default = 10
 }
