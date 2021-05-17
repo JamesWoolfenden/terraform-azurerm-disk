@@ -1,0 +1,4 @@
+version: 0.1
+resource_usage:
+  module.disk.azurerm_managed_disk.example:
+    monthly_disk_operations: 0
