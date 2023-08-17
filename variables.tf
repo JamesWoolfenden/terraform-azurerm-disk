@@ -6,7 +6,6 @@ variable "common_tags" {
 
 variable "location" {
   type    = string
-  default = "West US 2"
 }
 
 variable "storage_account_type" {
@@ -25,4 +24,10 @@ variable "disk_name" {
 variable "disk_size_gb" {
   type    = number
   default = 10
+}
+
+
+variable "disk_encryption_set_id" {
+  type = string
+  description = "set id of managed disk encryption set"
 }

@@ -3,5 +3,6 @@ common_tags = {
   "module"    = "terraform-azurerm-disk"
 }
 
-resource_group_name = "examplea"
-disk_name           = "examplea"
+location            = "uk south"
+resource_group_name = "pike"
+disk_name           = "pike"
