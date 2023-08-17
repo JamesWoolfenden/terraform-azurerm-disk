@@ -1,3 +1,3 @@
-output "disk" {
-  value = module.disk.disk
-}
+# output "disk" {
+#   value = module.disk.disk
+# }

@@ -5,7 +5,7 @@ variable "common_tags" {
 
 
 variable "location" {
-  type    = string
+  type = string
 }
 
 variable "storage_account_type" {
@@ -28,6 +28,6 @@ variable "disk_size_gb" {
 
 
 variable "disk_encryption_set_id" {
-  type = string
+  type        = string
   description = "set id of managed disk encryption set"
 }
